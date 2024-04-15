@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <div>
+        <h1>Cadastro</h1>
+        <p>
+            Preencha suas informações:
+        </p>
+    </div>
+    <form method="post"> <!--A tag "form" indica ao HTML que está iniciando um formulário. O "method post" indica o método de envio de dados de um formulário para o servidor web-->
+        <fieldset> <!--Serve para agrupar campos que tem o mesmo propósito-->
+            <div>
+                <label>Nome</label> <!--Dá um "nome" para o campo, indicando o que o usuário deve colocar. É quase como um <p>, ou um título pro campo-->
+                <input type="text" name="nome"> <!--"Type" indica o tipo de informação que o campo conterá, nesse caso, é um texto com caracteres. "Name" indica o nome do campo para o HTML em si-->
+            </div>
+            <br>
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" name="sobrenome">
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email">
+        </div>
+        <br>
+        <div>
+            <label>Qual o seu gênero?</label>
+            <label>
+                <input type="radio" name="genero"> Masculino <!--O "type radius" faz com que apareçam alternativas para o usuário escolher e clicar-->
+                <input type="radio" name="genero"> Feminino
+                <input type="radio" name="genero"> Não-binário
+                <input type="radio" name="genero"> Prefiro não informar
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>De que estado você é?</label>
+            <select> <!--Cria um campo de escolha-->
+                <option selected disabled>Selecione</option> <!--São as opções da tag select. Além disso, "selected" faz com que essa opção esteja selecionada quando o usuário abrir o formulário e "disable" faz com que, após o usuário alterar a opção pela primeira vez, seja impossível de voltar à primeira opção-->
+                <option>Paraná</option>
+                <option>Santa Catarina</option>
+                <option>Rio Grande do Sul</option>
+            </select>
+        </div>
+        <br>
+        <fieldset>
+            <div>
+                <label>Selecione suas preferências:</label><br><br>
+                <input type="checkbox" name="opcao1"> <!--Com o "type checkbox", é possível escolher mais de um tipo de opção-->
+                <label for="hora1">Durmo de vez em quando</label> <br>
+                <input type="checkbox" name="opcao2">
+                <label for="hora2">Durmo quando necessário</label> <br>
+                <input type="checkbox" name="opcao3">
+                <label for="hora3">Durmo na sala de aula</label> <br>
+                <input type="checkbox" name="opcao4">
+                <label for="todas">Amo dormir o tempo todo todas as horas do dia</label> <br><br>
+                <label>Escolha a hora que você mais gosta de dormir:</label>
+                <input type="time"> <!--Esse type apresenta uma escolha de horário para o usuário-->
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <label>Escolha sua cor favorita:</label>
+            <input type="color"> <!--O "type color" apresenta uma opção de cor para o usuário escolher-->
+        </div>
+        <br>
+        <div>
+            <label>Por fim, conte mais sobre sua história de vida &#127872;:</label> <br>
+            <textarea name="historiaDeVida" cols="50"></textarea> <!--O "textarea" é literalmente uma área onde pode-se colocar texto. "Cols" e "Rows" determina o tamanho da "textarea" visualmente-->
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    margin-block: 14%;
+}
+
+#calculadora {
+    background-color: white;
+    padding: 1.5%;
+    padding-inline: 3%;
+    border-radius: 2%;
+}
+
+button {
+    background-color: hotpink;
+    border: 0;
+    padding: 5%;
+    border-radius: 7%;
+}
+
+.centralizar {
+    text-align: center;
+}
+
+form div {
+    margin-block: 5%;
+}
