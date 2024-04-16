@@ -4,24 +4,35 @@
 }
 
 body {
-    background-color: pink;
+    /*background-color: pink;*/
+    background-image: url(background.png);
+    background-size: cover;
     display: flex;
     justify-content: center;
-    margin-block: 14%;
+    margin-block: 13%;
 }
 
 #calculadora {
     background-color: white;
     padding: 1.5%;
-    padding-inline: 3%;
+    padding-inline: 2%;
     border-radius: 2%;
+    width: 15%;
 }
 
 button {
     background-color: hotpink;
     border: 0;
-    padding: 5%;
-    border-radius: 7%;
+    padding: 4%;
+    border-radius: 5px;
+    font-size: larger;
+    width: 100%;
+}
+
+button:hover{
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s;
+    cursor: none;
 }
 
 .centralizar {
@@ -29,5 +40,42 @@ button {
 }
 
 form div {
-    margin-block: 5%;
+    margin-block: 2%;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+label {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+input {
+    height: 4vmin;
+    width: 100%;
+    margin-top: 3%;
+    font-size: large;
+}
+
+#operacao {
+    height: 4vmin;
+    font-size: large;
+    width: 100%;
+}
+
+#resultado {
+    display: flex;
+}
+
+#resultado p{
+    padding-right: 5%;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mostrarResultado {
+    font-weight: bolder;
 }
